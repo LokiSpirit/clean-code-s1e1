@@ -26,9 +26,12 @@ body {
     }
 }
 
-.centered-main-page-element {
+.main {
     display: block;
     width: 500px;
+}
+
+.main_centered {
     margin: 0 auto 0;
 }
 
