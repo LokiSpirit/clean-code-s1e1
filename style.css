@@ -128,7 +128,7 @@ body {
     vertical-align: middle;
 }
 
-.tasks-list__item>input[type="checkbox"] {
+.tasks-list__item>.tasks-list__checkbox {
     margin: 0 10px;
 }
 
@@ -154,7 +154,7 @@ body {
 }
 
 /* Completed */
-.tasks-list#completed-tasks label {
+.tasks-list.tasks-list_completed .tasks-list__item-label {
     text-decoration: line-through;
     color: #888;
 }
@@ -169,6 +169,6 @@ body {
     width: 224px;
 }
 
-.tasks-list .tasks-list__item.tasks-list__item_mode_edit label {
+.tasks-list .tasks-list__item.tasks-list__item_mode_edit .tasks-list__item-label {
     display: none;
 }

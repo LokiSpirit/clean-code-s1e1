@@ -35,11 +35,13 @@ var createNewTaskElement=function(taskString){
 
     listItem.classList.add('tasks-list__item');
     label.innerText=taskString;
-    label.className='task';
+    label.className = 'task';
+    label.classList.add('tasks-list__item-label');
 
     //Each elements, needs appending
     checkBox.type="checkbox";
     checkBox.classList.add('input');
+    checkBox.classList.add('tasks-list__checkbox');
 
     editInput.type="text";
     editInput.className = "task";
@@ -180,7 +182,7 @@ var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
 
 //cycle over incompleteTaskHolder ul list items
 //for each list item
-for (var i=0; i<incompleteTaskHolder.children.length;i++){
+for (var i=0; i < incompleteTaskHolder.children.length; i++){
 
     //bind events to list items chldren(tasksCompleted)
     bindTaskEvents(incompleteTaskHolder.children[i],taskCompleted);
@@ -190,7 +192,7 @@ for (var i=0; i<incompleteTaskHolder.children.length;i++){
 
 
 //cycle over completedTasksHolder ul list items
-for (var i=0; i<completedTasksHolder.children.length;i++){
+for (var i=0; i < completedTasksHolder.children.length; i++){
     //bind events to list items chldren(tasksIncompleted)
     bindTaskEvents(completedTasksHolder.children[i],taskIncomplete);
 }
