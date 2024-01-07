@@ -139,17 +139,17 @@ body {
     width: 226px;
 }
 
-.tasks-list__item>input[type="text"] {
+.tasks-list__item>.task-text {
     width: 226px;
 }
 
-.button.delete img {
+.button.delete .delete-pic {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
 }
 
-.button.delete img:hover {
+.button.delete .delete-pic:hover {
     transform: rotateZ(0);
 }
 
@@ -160,11 +160,11 @@ body {
 }
 
 /* Edit Task */
-.tasks-list .tasks-list__item input[type=text] {
+.tasks-list .tasks-list__item .task-text {
     display: none;
 }
 
-.tasks-list .tasks-list__item.tasks-list__item_mode_edit input[type=text] {
+.tasks-list .tasks-list__item.tasks-list__item_mode_edit .task-text {
     display: inline-block;
     width: 224px;
 }
