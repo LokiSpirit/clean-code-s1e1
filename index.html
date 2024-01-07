@@ -18,28 +18,28 @@
         <article class="add" id="add-section">
             <label class="add__label" for="new-task">Add Item</label>
             <form onsubmit="return false;" class="add__form form" name="add-form" id="add__form">
-                <input id="new-task" name="task" class="task-text task" type="text">
-                <button class="add__button" name="btn" type="submit">Add</button>
+                <input id="new-task" name="task" class="input task-text task" type="text">
+                <button class="add__button button" name="btn" type="submit">Add</button>
             </form>
         </article>
         <article class="todo">
             <h3 class="article-title">Todo</h3>
             <ul class="todo__list tasks-list tasks-list_incompleted" id="tasks_incompleted">
                 <li class="tasks-list__item">
-                    <input type="checkbox">
+                    <input type="checkbox" class="input">
                     <label class="task">Pay Bills</label>
-                    <input type="text" class="task task-text">
-                    <button type="button" class="edit">Edit</button>
-                    <button class="delete" type="button">
+                    <input type="text" class="input task task-text">
+                    <button type="button" class="button edit">Edit</button>
+                    <button class="button delete" type="button">
                         <img src="./remove.svg" alt="">
                     </button>
                 </li>
                 <li class="tasks-list__item tasks-list__item_mode_edit">
-                    <input type="checkbox">
-                    <label class="task">Go Shopping</label>
-                    <input type="text" value="Go Shopping" class="task task-text">
-                    <button type="button" class="edit">Save</button>
-                    <button class="delete" type="button">
+                    <input type="checkbox" class="input">
+                    <label class="tasks-list__item-label task">Go Shopping</label>
+                    <input type="text" value="Go Shopping" class="input task task-text">
+                    <button type="button" class="button edit">Save</button>
+                    <button class="button delete" type="button">
                         <img src="./remove.svg" alt="">
                     </button>
                 </li>
@@ -49,11 +49,11 @@
             <h3 class="article-title">Completed</h3>
             <ul class="completed__list tasks-list tasks-list_completed" id="tasks_completed">
                 <li class="tasks-list__item">
-                    <input type="checkbox" checked>
+                    <input type="checkbox" class="input" checked>
                     <label class="task">See the Doctor</label>
-                    <input type="text" class="task task-text">
-                    <button type="button" class="edit">Edit</button>
-                    <button class="delete" type="button">
+                    <input type="text" class="input task task-text">
+                    <button type="button" class="button edit">Edit</button>
+                    <button class="button delete" type="button">
                         <img src="./remove.svg" alt="">
                     </button>
                 </li>
